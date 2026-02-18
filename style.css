@@ -394,9 +394,13 @@ ul {
 }
 
 .about-image {
-    flex: 1 1 300px;
-    display: flex;
-    justify-content: center;
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    /* Removed display: flex and justify-content: center as they are not needed for a block image */
 }
 
 .about-text {
@@ -420,14 +424,11 @@ ul {
 
 .profile-img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-primary);
     box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
-    margin: 0 auto;
     display: block;
 }
 
