@@ -708,6 +708,7 @@ ul {
     color: white;
     font-weight: 500;
     margin: 0;
+    position: relative;
     z-index: 1;
     letter-spacing: -1px;
 }
@@ -724,6 +725,7 @@ ul {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-decoration: none;
     display: inline-block;
+    position: relative;
     z-index: 1;
     box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
 }
