@@ -843,3 +843,58 @@ footer {
         padding: 1rem 5%;
     }
 }
+
+/* Contact Info Grid */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: var(--card-bg);
+    border: var(--glass-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--accent-primary);
+    /* Blue/Sky color */
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box:hover .icon-circle {
+    background: var(--gradient-main);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
+}
+
+.contact-box h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.contact-box p {
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
