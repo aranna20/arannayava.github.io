@@ -386,10 +386,21 @@ ul {
 
 /* About Section */
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
     align-items: center;
+    justify-content: center;
+}
+
+.about-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    flex: 1.5 1 400px;
 }
 
 .profile-placeholder {
@@ -408,8 +419,10 @@ ul {
 }
 
 .profile-img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-primary);
@@ -669,9 +682,10 @@ ul {
     align-items: center;
     gap: 4rem;
     padding: 5rem 2rem;
-    background: #000;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: var(--glass-border);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     margin-bottom: 3rem;
     position: relative;
@@ -685,7 +699,7 @@ ul {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, transparent 70%);
     z-index: 0;
 }
 
@@ -699,10 +713,9 @@ ul {
 }
 
 .btn-cta {
-    background-color: #ffc107;
-    /* Warning Amber */
-    color: #000;
-    font-weight: 800;
+    background: var(--gradient-main);
+    color: white;
+    font-weight: 700;
     padding: 1.2rem 4rem;
     border-radius: 50px;
     text-transform: uppercase;
@@ -712,13 +725,12 @@ ul {
     text-decoration: none;
     display: inline-block;
     z-index: 1;
-    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
 }
 
 .btn-cta:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.6);
-    background-color: #ffca2c;
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.6);
 }
 
 .social-links-footer {
@@ -754,7 +766,6 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     .about-grid {
-        grid-template-columns: 1fr;
         text-align: center;
     }
 
