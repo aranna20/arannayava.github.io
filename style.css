@@ -746,6 +746,8 @@ ul {
     color: var(--text-secondary);
     font-size: 1.5rem;
     transition: var(--transition);
+    position: relative;
+    z-index: 10;
 }
 
 .social-links-footer a:hover {
