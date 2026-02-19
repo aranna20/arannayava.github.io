@@ -675,6 +675,22 @@ ul {
     /* Slide arrow */
 }
 
+/* View All Projects CTA */
+.view-all-projects {
+    text-align: center;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.view-all-projects p {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 /* Contact Section (CTA) */
 .cta-wrapper {
     display: flex;
