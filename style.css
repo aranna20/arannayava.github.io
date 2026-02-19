@@ -861,6 +861,11 @@ footer {
     }
 }
 
+/* Remove underline from Contact Me title */
+#contact .section-title::after {
+    display: none;
+}
+
 /* Contact Info Grid */
 .contact-info-grid {
     display: grid;
