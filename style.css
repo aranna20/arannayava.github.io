@@ -901,7 +901,7 @@ footer {
 
 .contact-box p a {
     color: var(--accent-primary);
-    text-decoration: none;
+    text-decoration: underline;
     transition: var(--transition);
 }
 
